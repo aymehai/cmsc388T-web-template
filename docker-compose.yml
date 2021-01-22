@@ -2,7 +2,12 @@ version: '3'
 
 services:
   nodejs:
-    #fill out the configuration here
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aymen_webapp
+    container_name: aymen_webapp
+    restart: unless-stopped
     networks:
       - app-network
   
