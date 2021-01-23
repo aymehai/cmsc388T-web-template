@@ -14,5 +14,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd ../pub/aymehai.github.io
+            cd ../pub
+            cd aymehai.github.io
             git pull
